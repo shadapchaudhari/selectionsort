@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+        .light-mode {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="button" id="changeColor" value="switch to dark">
+    <h1> This is light Theme</h1>
+    <h1></h1>
+
+    <script>
+        let sw = document.getElementById("changeColor");
+        sw.addEventListener("click" , function(){
+            let heading = document.getElementsByTagName("h1")[0];
+            heading.innerHTML = "Switch to light mode";
+            let body = document.getElementsByTagName("body")[0];
+            body.classList.toggle("dark-mode");   
+        })
+    </script>
+</body>
+
+</html>
