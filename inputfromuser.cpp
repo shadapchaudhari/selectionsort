@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-    string name , courseName;
+    string name ,courseName;
     long long phoneNumber;
     cout << " What is your name?" << endl;
     cin >> name;
@@ -23,7 +23,7 @@ int main()
         }
         else
         {
-            courseName = "Not available";
+            courseName ="Not available";
         }
     }
     cout << name << endl;
