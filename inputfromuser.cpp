@@ -14,7 +14,7 @@ int main()
     cout<<courseName;
     cout<<endl;
     int size = sizeof(courses) / sizeof(courses[0]);
-    for (int i = 0; i < size; i++)
+    for (int i =0; i < size;i++)
     {
         if (courses[i] == courseName)
         
@@ -23,7 +23,7 @@ int main()
         }
         else
         {
-            courseName ="Not available";
+            courseName="Not available";
         }
     }
     cout << name << endl;
