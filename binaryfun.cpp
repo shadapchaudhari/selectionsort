@@ -15,11 +15,11 @@ bool BinarySearch(int arr[], int target, int size)
         else if (target > arr[mid])
         {
             // 6 > 4
-            start= mid + 1;
+            start=mid + 1;
         }
         else
         {
-            end = mid - 1;
+            end =mid - 1;
         }
     }
     return false;
@@ -29,6 +29,6 @@ int main()
     int ar[] = {1, 2, 3, 4, 5, 6};
     int size = sizeof(ar) / sizeof(ar[0]);
     bool output= BinarySearch(ar, 2, size);
-    cout << output << endl;
+    cout <<output<< endl;
     return 0;
 }
